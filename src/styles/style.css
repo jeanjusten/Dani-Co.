@@ -5,9 +5,12 @@
     --colorBody: #252525;
     --colorBodySec: #ffffff;
     --colorPrimary: rgb(194, 213, 23);
+    --colorCards: #fffaf5;
 
     --colorButton:  rgb(194, 213, 23);
     --colorButtonHover: rgb(224, 243, 57);
+    --colorButton2: #7A1FA2;
+    --colorButtonHover2: #4d1a63;
 
     --colorTextPrimary: #ffffff;
     --colorTextSecondary: #000000;
@@ -16,6 +19,16 @@
     --colorScrollBg: #1f1f1f;
 
     --colorHeader: #131212;
+
+    --colorAccordionHeader: #000000;
+    --colorAccordionHeaderActive: #000000;
+    --colorAccordionText: #000000;
+    --colorAccordionCollapsed: rgb(194, 213, 23);
+    --colorAccordionBody: #fffaf5;
+    --colorAccordionBodyCollapsed: #fffaf5;
+
+    --colorFooter: #1a1a1a;
+    --colorFooter2: #171717;
 }
 
 /*----------------------------*/
@@ -26,7 +39,8 @@
     margin: 0;
     scroll-behavior: smooth;
     scroll-padding-top: 64px;
-    font-family: "Lexend", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -113,9 +127,11 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: var(--colorBody);
+    /*
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
+    */
 }
 
 .navbar {
@@ -286,32 +302,48 @@ header {
     pointer-events: none;
 }
 
+/*
 .container-parallax .bg-9 {
     background-image: url(/src/img/9-background\ parallax.png);
     pointer-events: none;
 }
+*/
 
 /*----------------------------*/
 /*BUTTONS*/
 /*----------------------------*/
-.btn, .btn:focus, btn:hover {
-    text-decoration: none !important;
-    box-shadow: none !important;
-}
-
-
-
 .button-cta {
     background-color: var(--colorButton);
     color: var(--colorTextSecondary) !important;
     font-weight: bold;
     transition: ease-in-out 0.5s;
+    width: 200px;
+}
+
+.button-cta-aiq {
+    background-color: var(--colorButton);
+    color: var(--colorTextSecondary) !important;
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
+    width: 200px;
 }
 
 .button-cta:hover {
     background-color: var(--colorButtonHover);
 }
 
+.button-cta-aiq:hover {
+    background-color: var(--colorButtonHover2);
+    color: var(--colorTextPrimary) !important;
+}
+
+.color-headline {
+    color: var(--colorPrimary);
+}
+
+.order_icon {
+    max-height: 30px;
+}
 
 /*----------------------------*/
 /*ABOUT SECTION*/
@@ -319,8 +351,18 @@ header {
 #about {
     background-color: var(--colorBodySec);
     color: var(--colorTextSecondary);
+    font-size: 1.1rem;
 }
 
+.img-about {
+    max-width: 100%;
+    border-radius: 5%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.photo-sub {
+    color: grey;
+}
 
 .container-right-about p{
     color: var(--colorTextSecondary);
@@ -342,12 +384,11 @@ header {
 /*MENU SECTION*/
 /*----------------------------*/
 #services {
-    color: var(--colorTextPrimary);
-    bottom: 0;
-    left: 0;
+    color: var(--colorTextSecondary);
     width: 100%;
-    background-color: var(--colorBody);
+    background-color: var(--colorBodySec);
     pointer-events: none; 
+    font-size: 1.1rem;
 }
 
 .container-services {
@@ -361,6 +402,214 @@ header {
     .container-services {
         display: block;
     }
+}
+
+.card-icon {
+    object-fit: contain;
+}
+
+.card {
+    color: var(--colorTextSecondary);
+    background-color: var(--colorCards);
+    border-color: transparent;
+    outline: none;
+    border-radius: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    padding-top: 15px;
+}
+
+.card-header-link {
+    text-decoration: none;
+    color: var(--colorTextSecondary);
+    transition: ease-in-out 0.5s;
+}
+
+.card-header-link:hover {
+    text-decoration: none;
+    color: var(--colorPrimary);
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body h5, .card-body p {
+    color: var(--color-text) !important;
+}
+
+.card-text {
+    min-height: 55px;
+}
+
+.card video {
+    width: 100%;  
+    height: auto; 
+    max-height: 400px; 
+    border-radius: 10px; 
+}
+
+/*----------------------------*/
+/*SOCIAL MEDIAS*/
+/*----------------------------*/
+#social-media {
+    color: var(--colorTextSecondary);
+    width: 100%;
+    background-color: var(--colorBodySec);
+}
+
+.text-p {
+    font-size: 1.2rem !important;
+}
+
+/*----------------------------*/
+/*FAQ*/
+/*----------------------------*/
+#faq {
+    color:  var(--colorTextSecondary);
+    background-color: var(--colorBodySec); 
+}
+
+#faq .container p {
+    color:  var(--colorTextSecondary);
+}
+
+.accordion-item {
+    border: transparent;
+    margin-bottom: 10px;
+    background-color: var(--colorAccordionBody);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-button {
+    border: none; 
+    outline: none; 
+    box-shadow: none;
+    background-color: var(--colorAccordionBody);
+    color:  var(--colorAccordionText);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--colorAccordionCollapsed); 
+    color: var(--colorAccordionHeaderActive); 
+    font-weight: bold;
+}
+
+.accordion-body {
+    background-color: var(--colorAccordionBodyCollapsed);
+    color: var(--colorTextSecondary);
+}
+
+/*Accordion button to collapse*/
+.accordion-button::after {
+    filter: brightness(0) invert(1); 
+    transition: transform 0.3s ease; 
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); 
+}
+
+
+/*----------------------------*/
+/*FOOTER*/
+/*----------------------------*/
+#info {
+    background-color: var(--colorFooter)!important;
+    border-bottom: 3px solid !important;
+    border-color: var(--colorPrimary) !important;
+}
+
+.follow-us-footer {
+    color: var(--colorTextPrimary);
+}
+
+#info-container {
+    background-image: url(./images/noisepattern.webp);
+    background-color: var(--colorFooter) !important;
+    color: var(--colorTextPrimary);
+    border-color: var(--colorFooter) !important;
+}
+
+#footer-foot-note {
+    background-image: url(./images/noisepattern.webp);
+    background-color: var(--colorFooter) !important;
+    padding-bottom: 1rem;
+}
+
+.footer-menu1 p a:hover {
+    color: var(--colorPrimary) !important;
+}
+
+#footer-info {
+    text-align: center;
+}
+
+#footer-logo {
+    max-height: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+#footer-logo:hover {
+    transform: scale(1.05);
+}
+
+#footer-social-links a svg {
+    text-decoration: none !important;
+}
+
+#footer-social-links a svg {
+    color: var(--colorPrimary);
+    margin-left: 10px !important;
+    transition: 0.5s ease-in-out;
+}
+
+#footer-social-links a svg:hover {
+    color: var(--colorButtonHover);
+}
+
+#footer-social-links a {
+    text-decoration: none; 
+}
+
+.contact-footer {
+    vertical-align: center !important;
+    align-items: center;
+    align-content: center;
+}
+
+#footer-foot-note {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+#footer-foot-note span {
+    color: #dfdfdf !important;
+    margin-right: 10px;
+}
+
+#footer-developed-by {
+    font-weight: bold;
+}
+
+#footer-developed-by a {
+    color: rgb(233, 233, 233) !important;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+#footer-developed-by a:hover {
+    color: var(--colorPrimary) !important;
+    text-decoration: underline;
 }
 
 /*----------------------------*/
