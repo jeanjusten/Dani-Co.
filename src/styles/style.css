@@ -520,6 +520,15 @@ header {
 
 
 /*----------------------------*/
+/*ORDERS*/
+/*----------------------------*/
+#order {
+    background-color: var(--colorBodySec);
+    color: var(--colorTextSecondary);
+    font-size: 1.1rem;
+}
+
+/*----------------------------*/
 /*FOOTER*/
 /*----------------------------*/
 #info {
