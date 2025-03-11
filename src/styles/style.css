@@ -314,7 +314,7 @@ header {
 /*BUTTONS*/
 /*----------------------------*/
 
-.button-cta {
+.button-cta, .button-cta-whats {
     background-color: var(--colorButton);
     color: var(--colorTextSecondary) !important;
     font-weight: bold;
@@ -335,6 +335,10 @@ header {
 }
 
 .button-cta:hover {
+    background-color: var(--colorButtonHover);
+}
+
+.button-cta-whats:hover {
     background-color: var(--colorButtonHover3);
     color: var(--colorTextPrimary) !important;
 }
@@ -355,7 +359,7 @@ header {
 }
 
 .button-cta-aiq:hover .order_icon2,
-.button-cta:hover .order_icon {
+.button-cta-whats:hover .order_icon {
     filter: brightness(1000%);
 }
 
