@@ -312,20 +312,25 @@ header {
 /*----------------------------*/
 /*BUTTONS*/
 /*----------------------------*/
+
 .button-cta {
     background-color: var(--colorButton);
     color: var(--colorTextSecondary) !important;
     font-weight: bold;
     transition: ease-in-out 0.5s;
     width: 200px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 8px;
 }
 
 .button-cta-aiq {
     background-color: var(--colorButton);
     color: var(--colorTextSecondary) !important;
     font-weight: bold;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.5s;
     width: 200px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 8px;
 }
 
 .button-cta:hover {
@@ -341,8 +346,17 @@ header {
     color: var(--colorPrimary);
 }
 
-.order_icon {
+.order_icon, .order_icon2 {
     max-height: 30px;
+}
+
+.order_icon2 {
+    filter: brightness(0%);
+    transition: ease-in-out 0.5s;
+}
+
+.button-cta-aiq:hover .order_icon2 {
+    filter: brightness(1000%);
 }
 
 /*----------------------------*/
@@ -378,6 +392,24 @@ header {
 
 .img-about-left:hover {
     transform: scale(1.05);
+}
+
+.icon-certificates {
+    text-decoration: none;
+}
+
+.icon-certificates:hover {
+    text-decoration: none;
+}
+
+.icon-certificates img {
+    max-height: 48px;
+    transition: ease-in-out 0.5s;
+}
+
+.icon-certificates img:hover {
+    max-height: 48px;
+    transform: scale(1.08);
 }
 
 /*----------------------------*/
@@ -493,7 +525,7 @@ header {
     border: none; 
     outline: none; 
     box-shadow: none;
-    background-color: var(--colorAccordionBody);
+    background-color: var(--colorTextPrimary);
     color:  var(--colorAccordionText);
 }
 
@@ -510,14 +542,12 @@ header {
 
 /*Accordion button to collapse*/
 .accordion-button::after {
-    filter: brightness(0) invert(1); 
     transition: transform 0.3s ease; 
 }
 
 .accordion-button:not(.collapsed)::after {
     transform: rotate(180deg); 
 }
-
 
 /*----------------------------*/
 /*ORDERS*/
