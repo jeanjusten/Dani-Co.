@@ -11,6 +11,7 @@
     --colorButtonHover: rgb(224, 243, 57);
     --colorButton2: #7A1FA2;
     --colorButtonHover2: #4d1a63;
+    --colorButtonHover3: #25CD45;
 
     --colorTextPrimary: #ffffff;
     --colorTextSecondary: #000000;
@@ -334,7 +335,8 @@ header {
 }
 
 .button-cta:hover {
-    background-color: var(--colorButtonHover);
+    background-color: var(--colorButtonHover3);
+    color: var(--colorTextPrimary) !important;
 }
 
 .button-cta-aiq:hover {
@@ -348,14 +350,12 @@ header {
 
 .order_icon, .order_icon2 {
     max-height: 30px;
-}
-
-.order_icon2 {
     filter: brightness(0%);
     transition: ease-in-out 0.5s;
 }
 
-.button-cta-aiq:hover .order_icon2 {
+.button-cta-aiq:hover .order_icon2,
+.button-cta:hover .order_icon {
     filter: brightness(1000%);
 }
 
