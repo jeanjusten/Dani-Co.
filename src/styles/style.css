@@ -363,6 +363,12 @@ header {
     filter: brightness(1000%);
 }
 
+.img-order {
+    max-width: 550px; 
+    border-radius: 5%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
 /*----------------------------*/
 /*ABOUT SECTION*/
 /*----------------------------*/
@@ -373,7 +379,7 @@ header {
 }
 
 .img-about {
-    max-width: 100%;
+    max-height: 650px; 
     border-radius: 5%;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
 }
