@@ -379,7 +379,8 @@ header {
 }
 
 .img-about {
-    max-height: 650px; 
+    margin: 0 auto; 
+    max-height: 620px;
     border-radius: 5%;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
 }
@@ -391,6 +392,20 @@ header {
 .container-right-about p{
     color: var(--colorTextSecondary);
     font-weight: 400;
+}
+
+@media (max-width: 991px) {
+    .img-about { 
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .photo-sub {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .img-about-left {
@@ -566,6 +581,12 @@ header {
     background-color: var(--colorBodySec);
     color: var(--colorTextSecondary);
     font-size: 1.1rem;
+}
+
+.img-order2 {
+    max-width: 95%; 
+    border-radius: 5%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 /*----------------------------*/
