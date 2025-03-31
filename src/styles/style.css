@@ -258,54 +258,54 @@ header {
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-image: url(/src/img/1-background\ parallax.png);
+    background-image: url(/src/img/1-background\ parallax.webp);
     background-size: cover;
     background-position: center;
 }
 
 .container-parallax .bg-1 {
-    background-image: url(/src/img/2-background\ parallax.png);
+    background-image: url(/src/img/2-background\ parallax.webp);
     pointer-events: none;
 }
 
 .container-parallax .bg-2 {
-    background-image: url(/src/img/3-background\ parallax.png);
+    background-image: url(/src/img/3-background\ parallax.webp);
     pointer-events: none;
 }
 
 .container-parallax .bg-3 {
-    background-image: url(/src/img/4-background\ parallax.png);
+    background-image: url(/src/img/4-background\ parallax.webp);
     pointer-events: none;
 }
 
 .container-parallax .bg-4 {
-    background-image: url(/src/img/5-background\ parallax.png);
+    background-image: url(/src/img/5-background\ parallax.webp);
     pointer-events: none;
 }
 
 .container-parallax .bg-5 {
-    background-image: url(/src/img/6-background\ parallax.png);
+    background-image: url(/src/img/6-background\ parallax.webp);
     pointer-events: none;
 }
 
 .container-parallax .bg-6 {
-    background-image: url(/src/img/7-background\ parallax.png);
+    background-image: url(/src/img/7-background\ parallax.webp);
     pointer-events: none;
 }
 
 .container-parallax .bg-7 {
-    background-image: url(/src/img/8-background\ parallax.png);
+    background-image: url(/src/img/8-background\ parallax.webp);
     pointer-events: none;
 }
 
 .container-parallax .bg-8 {
-    background-image: url(/src/img/9-background\ parallax.png);
+    background-image: url(/src/img/9-background\ parallax.webp);
     pointer-events: none;
 }
 
 /*
 .container-parallax .bg-9 {
-    background-image: url(/src/img/9-background\ parallax.png);
+    background-image: url(/src/img/9-background\ parallax.webp);
     pointer-events: none;
 }
 */
@@ -379,8 +379,8 @@ header {
 }
 
 .img-about {
-    margin: 0 auto; 
-    max-height: 620px;
+    margin: 0 ; 
+    max-height: 520px;
     border-radius: 5%;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
 }
@@ -440,6 +440,10 @@ header {
 /*----------------------------*/
 /*MENU SECTION*/
 /*----------------------------*/
+p.card-text a {
+    pointer-events: auto !important;
+}
+
 #services {
     color: var(--colorTextSecondary);
     width: 100%;
@@ -494,7 +498,6 @@ header {
 }
 
 .card-body {
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
