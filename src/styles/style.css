@@ -313,6 +313,9 @@ header {
 /*----------------------------*/
 /*BUTTONS*/
 /*----------------------------*/
+.cta-link {
+    text-decoration: none;
+}
 
 .button-cta, .button-cta-whats {
     background-color: var(--colorButton);
@@ -380,7 +383,7 @@ header {
 
 .img-about {
     margin: 0 ; 
-    max-height: 520px;
+    max-height: 650px;
     border-radius: 5%;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
 }
