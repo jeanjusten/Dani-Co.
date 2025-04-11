@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://danicompany.com.br/sitemap.xml
+Sitemap: https://www.danicompany.com.br/sitemap.xml
