@@ -22,8 +22,6 @@ window.addEventListener("scroll", () => {
 });
 //#endregion
 
-
-
 //#region Scroll Animation
 const observer = new IntersectionObserver((entries) => { // Handles the visibility of elements in screen
     entries.forEach((entry) => {

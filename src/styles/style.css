@@ -451,7 +451,6 @@ p.card-text a {
     color: var(--colorTextSecondary);
     width: 100%;
     background-color: var(--colorBodySec);
-    pointer-events: none; 
     font-size: 1.1rem;
 }
 
@@ -557,10 +556,11 @@ p.card-text a {
 /*----------------------------*/
 .text-link {
     color: var(--colorTextSecondary);
+    cursor: pointer;
 }
 
 .text-link:hover {
-    color: blue;
+    color: var(--colorPrimary) !important;
 }
 
 #social-media {
