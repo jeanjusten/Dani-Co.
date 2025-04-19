@@ -211,6 +211,7 @@ header {
     }
 }
 
+
 /*----------------------------*/
 /*MAIN SECTION*/
 /*----------------------------*/
@@ -383,9 +384,15 @@ header {
 
 .img-about {
     margin: 0 ; 
-    max-height: 650px;
+    max-height: 550px;
     border-radius: 5%;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 400px) {
+    .img-about {
+        max-height: 450px !important;
+    }
 }
 
 .photo-sub {
@@ -502,14 +509,19 @@ p.card-text a {
 .card-body {
     flex-direction: column;
     justify-content: center;
+    max-height: 180px;
 }
 
 .card-body h5, .card-body p {
     color: var(--color-text) !important;
 }
 
-.card-text {
-    min-height: 55px;
+.card-body h5, .card-header h5 {
+    font-size: 1.2rem;
+}
+
+.card-body p {
+    font-size: 1rem !important;
 }
 
 .card video {
