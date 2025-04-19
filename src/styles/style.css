@@ -635,14 +635,14 @@ p.card-text a {
 /*----------------------------*/
 /*ORDERS*/
 /*----------------------------*/
-.container-left-about {
+.container-left-orders {
     max-width: 100%;
     display: flex;
     justify-content: center;
 }
 
 @media (min-width:991px) {
-    .container-left-about {
+    .container-left-orders {
         max-width: 50%;
     }
 }
