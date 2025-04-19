@@ -338,6 +338,17 @@ header {
     margin-top: 8px;
 }
 
+@media (max-width: 491px) {
+    .button-cta, .button-cta-whats, .button-cta-aiq {
+        width: 120px;
+    }
+    .cta-h5 {
+        font-size: 1.1rem;
+    }
+
+}
+
+
 .button-cta:hover {
     background-color: var(--colorButtonHover);
 }
