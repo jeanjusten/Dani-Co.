@@ -635,6 +635,18 @@ p.card-text a {
 /*----------------------------*/
 /*ORDERS*/
 /*----------------------------*/
+.container-left-about {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:991px) {
+    .container-left-about {
+        max-width: 50%;
+    }
+}
+
 #order {
     background-color: var(--colorBodySec);
     color: var(--colorTextSecondary);
@@ -642,8 +654,11 @@ p.card-text a {
 }
 
 .img-order2 {
-    max-width: 95%; 
+    object-fit: contain;
     border-radius: 5%;
+    display: block;
+    width: 100%;
+    height: auto; 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.3);
 }
 
