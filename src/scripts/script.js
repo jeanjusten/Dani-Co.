@@ -3,8 +3,10 @@ window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
     if (loader) {
         loader.classList.add("loader--hidden");
-        loader.addEventListener("transitionend", () => {
-            loader.style.display = "none";
+        loader.addEventListener("transitionend", (e) => {
+            if (e.propertyName === "opacity") {
+                loader.style.display = "none";
+            }
         });
     }
 });
