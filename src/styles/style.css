@@ -515,6 +515,7 @@ p.card-text a {
 
 .card-title {
     font-size: 1.5rem;
+    height: 35px
 }
 
 .card-body {
