@@ -1,10 +1,15 @@
-//#region Page Loader - Fade out when Fully Loaded
+//#region Page Loader Fade out when Fully Loaded
 window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader")
-    loader.classList.add("loader--hidden");
-
-    document.body.removeChild(document.body.firstChild);
-})
+    const loader = document.querySelector(".loader");
+    if (loader) {
+        loader.classList.add("loader--hidden");
+        loader.addEventListener("transitionend", (e) => {
+            if (e.propertyName === "opacity") {
+                loader.style.display = "none";
+            }
+        });
+    }
+});
 //#endregion
 
 //#region Closes the dropdown menu after clicking.
