@@ -100,12 +100,10 @@ The website uses Bootstrap breakpoints to provide a responsive experience.
 <!--Tools Used-->
 ## :large_orange_diamond: Tools and Technologies
 ### :arrow_forward: Stacks Used
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,bootstrap,sass,gulp)](https://skillicons.dev) <br>
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,bootstrap)](https://skillicons.dev) <br>
 <br>
 This website uses:<br>
   - Bootstrap: Framework used to create responsive and mobile-first layouts quickly.<br>
-  - Sass: CSS preprocessor, used to add features like variables, nesting, and mixins.<br>
-  - Gulp: Task runner used to automate development workflows, compiling Sass and optimizing assets like images.
 
 <!--Deploy-->
 ## :large_orange_diamond: Result
@@ -124,8 +122,6 @@ This website uses:<br>
 
 ### :arrow_forward: Other Links
 * [Bootstrap Documentation](https://getbootstrap.com/docs/)
-* [Sass Documentation](https://sass-lang.com/documentation/)
-* [Gulp Documentation](https://gulpjs.com/docs/en/getting-started/quick-start/)
 
 ## :large_orange_diamond: Etcetera
 ### :arrow_forward: About
