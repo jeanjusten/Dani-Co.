@@ -1,6 +1,7 @@
 ![Status](https://img.shields.io/badge/status-finished-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+![2025-06-0920-47-39-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/53ec8ef4-a33f-41ea-8217-3eb4d9a8a9e3)
 <!--Title Image-->
 # :computer: Dani&Co. - Healthy Food Restaurant - Landing-Page
 <p>
@@ -50,7 +51,7 @@ The main feature of this website, is a parallax effect on the hero-section. To s
 <!--Features-->
 ## :large_orange_diamond: Features
 ### :arrow_forward: Parallax Effect
-
+![2025-06-0920-50-47-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b4a96eb9-6b8b-41dc-b9d7-a54a1f9504b7)
 
 <p>
   This parallax effect was designed to impress users right from the moment they open the page.<br>
@@ -86,15 +87,15 @@ The website uses Bootstrap breakpoints to provide a responsive experience.
 </p>
 
 #### :small_red_triangle_down: Mobile
-
+![2025-06-0920-55-05-ezgif com-crop](https://github.com/user-attachments/assets/4f86d62e-07b2-4a5f-aa8e-3f69fa0ea3e6)
 <p>- Mobile View</p>
 
 #### :small_red_triangle_down: Tablet
-
+![2025-06-0920-55-57-ezgif com-crop](https://github.com/user-attachments/assets/223469ae-951f-47ad-924a-40b9c8d778c5)
 <p>- Tablet View</p>
 
 #### :small_red_triangle_down: Desktop
-
+![2025-06-0919-20-05-ezgif com-crop(2)](https://github.com/user-attachments/assets/f24d94e6-9cdb-4e3b-a3ca-ca9808f0f3be)
 <p>- Desktop View</p>
 
 <!--Tools Used-->
